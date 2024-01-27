@@ -15,25 +15,23 @@ const client = new MongoClient(uri, {
   },
 });
 
+const db = client.db("User");
+const notes = db.collection("notes");
+
+async function insertData(data) {
+  const p = await notes.insertOne(data);
+  console.log(p);
+}
 async function run() {
   try {
     // Connect the client to the server
     await client.connect();
-
     console.log("connected");
-    //create database
-
-    const db = client.db("User");
-    const collection = db.collection("notes");
-    const note = {
-      title: "hello",
-      text: "word",
-    };
-    const result = await collection.insertOne(note);
-    console.log(result);
   } finally {
     // Ensures that the client will close when you finish/error
     await client.close();
   }
 }
+
 run().catch(console.dir);
+module.exports = { run, insertData };

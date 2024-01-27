@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./notepad.module.css";
+import Styles from "../components/Styles/Styles";
 
 interface Note {
   title: string;
@@ -58,6 +59,7 @@ export default function DiaryPage() {
           Add to List
         </button>
       </div>
+      <Styles />
     </div>
   );
 }

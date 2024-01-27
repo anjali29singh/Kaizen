@@ -1,5 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Comfortaa:wght@300&family=Exo+2:wght@100&family=Inter:wght@100;200&family=Kanit:ital,wght@0,100;1,100&family=Karla:ital,wght@1,200&family=Lato:ital,wght@0,100;1,100&family=Lobster&family=Manrope:wght@200&family=Montserrat:ital,wght@0,100;1,100&family=Noto+Sans+JP:wght@300&family=Noto+Sans:ital,wght@0,100;1,100&family=Nunito+Sans:ital,wght@0,200;1,200&family=Open+Sans:wght@300&family=Oswald:wght@200;300&family=Pacifico&family=Playfair+Display:ital@0;1&family=Poppins:ital,wght@0,100;1,100&family=Raleway:ital,wght@0,100;1,100&family=Roboto+Condensed:ital,wght@0,100;1,100&family=Roboto+Slab:wght@100&family=Roboto:wght@100&family=Source+Code+Pro:wght@200&family=Ubuntu:ital,wght@0,300;1,300&display=swap");
+
 :root {
   /* background-color: rgb(15, 8, 8); */
   background-color: rgb(236, 219, 246);
+  --Bebas: "Bebas Neue", sans-serif;
+  --Caveat: "Caveat", cursive;
+  --Comfortaa: "Comfortaa", sans-serif;
+  --Exo: "Exo 2", sans-serif;
+  --Inter: "Inter", sans-serif;
+  --Kanit: "Kanit", sans-serif;
+  --Karla: "Karla", sans-serif;
+  --Lato: "Lato", sans-serif;
+  --Lobster: "Lobster", sans-serif;
+  --Manrope: "Manrope", sans-serif;
+  --Montserrat: "Montserrat", sans-serif;
+  --Noto: "Noto Sans", sans-serif;
+  --NotoJP: "Noto Sans JP", sans-serif;
+  --Nunito: "Nunito Sans", sans-serif;
+  --Open: "Open Sans", sans-serif;
+  --Oswald: "Oswald", sans-serif;
+  --Pacifico: "Pacifico", cursive;
+  --Playfair: "Playfair Display", serif;
+  --Poppins: "Poppins", sans-serif;
+  --Raleway: "Raleway", sans-serif;
+  --Roboto: "Roboto", sans-serif;
+  --RobotoCondensed: "Roboto Condensed", sans-serif;
+  --RobotoSlab: "Roboto Slab", serif;
+  --SourceCode: "Source Code Pro", monospace;
+  --Ubuntu: "Ubuntu", sans-serif;
+  --Aerial: "Aerial", sans-serif;
   /* color: black; */
 }

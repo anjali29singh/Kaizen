@@ -1,0 +1,14 @@
+.pin {
+  cursor: pointer;
+  color: black;
+}
+
+.pin:active {
+  color: rgb(29, 29, 29);
+}
+.stylesListClose {
+  display: none;
+}
+.stylesListOpen {
+  background-color: white;
+}
