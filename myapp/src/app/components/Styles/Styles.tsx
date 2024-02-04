@@ -35,7 +35,9 @@ function Styles() {
   const [isOpen, setState] = useState(false);
   const [fontFamily, setFontFamily] = useState(fontFamilyList[0]);
 
+  // const [isColorPaletteOpen, setColorPalette] = useState(false);
   const [color, setColor] = useColor("#fff");
+  const [backColor, setBackColor] = useColor("#fff");
 
   const openList = () => {
     setState(!isOpen);
@@ -46,7 +48,7 @@ function Styles() {
   };
 
   return (
-    <>
+    <div className={styles.main}>
       <div>
         <span
           className={`material-symbols-outlined ${styles.pin}`}
@@ -74,18 +76,27 @@ function Styles() {
         <div className={styles.fontWeight}>
           <input type="number" placeholder="font-weight:"></input>
         </div>
-        <div className={styles.color}>
+        <div>
+          Color:
           <ColorPicker
             color={color}
             onChange={setColor}
             hideInput={["hex", "hsv"]}
           />
         </div>
-        <div className={styles.backColor}>background color</div>
-        <div className={styles.padding}>Padding</div>
-        <div className={styles.align}>Align</div>
+        <div className={styles.backColor}>
+          background Color
+          <ColorPicker
+            color={backColor}
+            onChange={setBackColor}
+            hideInput={["hex", "hsv"]}
+          />
+        </div>
+        <div className={styles.padding}>
+          <input type="number" placeholder="padding:" />
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 

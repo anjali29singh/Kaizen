@@ -11,6 +11,9 @@ export default function DiaryPage() {
   const [text, setText] = useState("");
   const [title, setTitle] = useState("");
 
+  const [titleStyle, setTitleStyle] = useState({});
+  const [textStyle, setTextStyle] = useState({});
+
   //save new notes in the data base
 
   const addNote = async () => {
@@ -59,7 +62,8 @@ export default function DiaryPage() {
           Add to List
         </button>
       </div>
-      <Styles />
+
+      {/* <Styles /> */}
     </div>
   );
 }
