@@ -1,7 +1,5 @@
 "use client";
 import { useState } from "react";
-import styles from "./notepad.module.css";
-import Styles from "../components/Styles/Styles";
 
 interface Note {
   title: string;
@@ -33,34 +31,41 @@ export default function DiaryPage() {
     });
     const data = await res.json();
     console.log(data);
-
     setTitle("");
     setText("");
   };
 
   return (
-    <div className={styles.main}>
-      <div className={styles.writeSection}>
-        <textarea
-          placeholder="Title :"
-          className={styles.titleBox}
-          value={title}
-          onChange={(e) => {
-            setTitle(e.target.value);
-          }}
-        ></textarea>
-        <textarea
-          rows={35}
-          onChange={(e) => {
-            setText(e.target.value);
-          }}
-          placeholder="Write your notes here ..."
-          className={styles.diaryText}
-          value={text}
-        ></textarea>
-        <button title="Add to List" className={styles.addBtn} onClick={addNote}>
-          Add to List
-        </button>
+    <div className="main flex justify-end  mt-20  mr-44 ">
+      <div className="bg-white   flex flex-col pl-5 pt-5 w-2/5 border-solid border-2 border-gray-300">
+        <div className="flex flex-col  ">
+          <textarea
+            className=" overflow-hidden outline-none  "
+            onChange={(e) => {
+              setTitle(e.target.value);
+            }}
+            value={title}
+            placeholder="Title:"
+          ></textarea>
+          <textarea
+            rows={20}
+            onChange={(e) => {
+              setText(e.target.value);
+            }}
+            placeholder=" Write your notes here ..."
+            className="overflow-hidden outline-none "
+            value={text}
+          ></textarea>
+        </div>
+        <div className="">
+          <button
+            title="Add to List"
+            className="bg-sky-950 text-white ml-48 p-2"
+            onClick={addNote}
+          >
+            Add to List
+          </button>
+        </div>
       </div>
 
       {/* <Styles /> */}

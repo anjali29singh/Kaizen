@@ -13,10 +13,9 @@ export default function Home() {
         All in one productive create notes , tasks , schedules and more at one
         place
       </div>
-
       {/* create account or login  */}
       <button className={styles.startBtn} onClick={handleClick}>
-        Get Started
+        Get
       </button>
 
       {/* <UserButton afterSignOutUrl="/" /> */}

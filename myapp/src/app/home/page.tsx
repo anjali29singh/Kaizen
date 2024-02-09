@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       <div>
         <span className="material-symbols-outlined">task_alt</span>
-        <Link href="/tasks" style={{ textDecoration: "none", padding: "5px" }}>
+        <Link href="/todo" style={{ textDecoration: "none", padding: "5px" }}>
           Tasks
         </Link>
       </div>
